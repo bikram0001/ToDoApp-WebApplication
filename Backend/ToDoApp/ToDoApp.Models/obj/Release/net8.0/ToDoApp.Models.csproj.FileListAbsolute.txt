@@ -1,0 +1,12 @@
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\bin\Release\net8.0\ToDoApp.Models.deps.json
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\bin\Release\net8.0\ToDoApp.Models.dll
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\bin\Release\net8.0\ToDoApp.Models.pdb
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.AssemblyInfoInputs.cache
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.AssemblyInfo.cs
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.sourcelink.json
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.dll
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\refint\ToDoApp.Models.dll
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ToDoApp.Models.pdb
+C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp.Models\obj\Release\net8.0\ref\ToDoApp.Models.dll

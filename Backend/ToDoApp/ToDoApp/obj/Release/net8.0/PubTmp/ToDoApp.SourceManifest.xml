@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp\obj\Release\net8.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\bikram.b\Documents\GitHub\full-web-app-bikram0018\Backend\ToDoApp\ToDoApp\obj\Release\net8.0\PubTmp\EFSQLScripts\ToDoApp.Repository.ToDoAppContext.sql" />
+</sitemanifest>

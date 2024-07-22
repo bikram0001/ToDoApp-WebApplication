@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ToDoApp20240701134511" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\bikram\.b\\Documents\\GitHub\\full-web-app-bikram0018\\Backend\\ToDoApp\\ToDoApp\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="ToDoApp.Repository.ToDoAppContext" description="" value="Data Source=todoappdb-server.database.windows.net,1433;Initial Catalog=ToDoApp_db;User ID=bikram001;Password=B!kfor@v@rr@m1" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\bikram\.b\\Documents\\GitHub\\full-web-app-bikram0018\\Backend\\ToDoApp\\ToDoApp\\obj\\Release\\net8\.0\\PubTmp\\EFSQLScripts\\ToDoApp\.Repository\.ToDoAppContext\.sql$" />
+  </parameter>
+</parameters>
