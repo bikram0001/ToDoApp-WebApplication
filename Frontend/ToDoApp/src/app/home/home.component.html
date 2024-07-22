@@ -1,0 +1,12 @@
+<div class="home-page" [ngClass]="{'blur': addTaskVisible}">
+    <div class="nav-bar"> 
+        <app-side-nav-bar (headerEvent)="changeHeader($event)" (addTaskEvent)="addTask($event)"></app-side-nav-bar>
+    </div>
+    <div>
+        <app-header [heading]="headerHeading" (addTaskEvent)="addTask($event)"></app-header>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<div class="add-task" *ngIf="addTaskVisible">
+    <app-add-task (addTaskEvent)="hideTask($event)"></app-add-task>
+</div>

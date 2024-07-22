@@ -1,0 +1,8 @@
+<form class="add-task-container" [formGroup]="addTask">
+    <input type="text" placeholder="Add title" class="task-title" formControlName="taskTitle">
+    <textarea name="desc" class="task-desc" rows="5" placeholder="Add description" formControlName="taskDescription"></textarea>
+    <div class="task-buttons">
+        <button class="cancel-btn pointer" (click)="hideAddTask()">Cancel</button>
+        <button class="save-btn pointer" (click)="saveTask()">Save</button>
+    </div>
+</form>

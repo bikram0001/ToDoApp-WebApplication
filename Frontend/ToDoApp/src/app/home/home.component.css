@@ -1,0 +1,52 @@
+.home-page{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.add-task{
+    position: absolute;
+    left: 35%;
+    top: 25vh;
+}
+.blur{
+    filter: blur(5px);
+}
+@media (max-width: 900px) {
+    .nav-bar{
+        display: none;
+    }
+    .add-task{
+        top: 25vh;
+        left: 30vw;
+    }
+}
+@media (max-width : 600px){
+    .add-task{
+        top: 25vh;
+        left: 25vw;
+    }
+}
+@media (max-width : 550px){
+    .add-task{
+        top: 25vh;
+        left: 20vw;
+    }
+}
+@media (max-width : 480px){
+    .add-task{
+        top: 25vh;
+        left: 15vw;
+    }
+}
+@media (max-width : 400px){
+    .add-task{
+        top: 25vh;
+        left: 10vw;
+    }
+}
+@media (max-width : 350px){
+    .add-task{
+        top: 25vh;
+        left: 4vw;
+    }
+}

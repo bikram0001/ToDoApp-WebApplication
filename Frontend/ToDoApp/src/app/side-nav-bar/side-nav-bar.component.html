@@ -1,0 +1,12 @@
+<div class="side-nav-container">
+    <h1 class="to-do-logo-text">To-Do App</h1>
+    <div class="add-task-main-container">
+        <div class="add-task-container pointer" (click)="showAddTask()"> 
+            <span class="add-task-text">Add Task</span>
+            <img src="assets/Add button.png" alt="plus icon" class="plus-icon">
+        </div>
+        <div class="dashboard pointer" (click)="changeHeader('Dashboard')" [routerLink]="['/home/dashboard']" routerLinkActive="router-link-active" > <a>Dashboard</a> </div>
+        <div class="active pointer" (click)="changeHeader('Active')" [routerLink]="['/home/active']" routerLinkActive="router-link-active"> <a>Active</a> </div>
+        <div class="completed pointer" (click)="changeHeader('Completed')" [routerLink]="['/home/completed']" routerLinkActive="router-link-active"> <a>Completed</a> </div>
+    </div>
+</div>

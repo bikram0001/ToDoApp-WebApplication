@@ -1,0 +1,11 @@
+<form class="register-sign-up-form" [formGroup]="registerLoginForm" (ngSubmit)="formSubmit()">
+    <div class="register-sign-up-container" [ngClass]="{'sign-in-background': signIn}">
+        <h1 class="to-do-app-heading" [ngClass]="{'sign-in-header': signIn}">To-Do App</h1>
+        <p class="sub-title-text" [ngClass]="{'text-black': signIn}">Start organizing your life day by day</p>
+        <input type="text" class="username" placeholder="Username" formControlName="userName"><br>
+        <input [type]="hidePassword ? 'password' : 'text'" class="password" placeholder="Password" formControlName="password"><br>
+        <span><img [src]="eyeImg" alt="eye-icon" class="eye-icon pointer" (click)="toogleHide()"></span>
+        <button class="register-sign-up-btn pointer" [ngClass]="{'text-black' : signIn, 'sign-in-btn' : signIn}">{{buttonContent}}</button>
+        <p class="register-sign-in-text" [ngClass]="{'text-black' : signIn}">{{signInText}}<span class="sign-in-link pointer" (click)="toogleSignInSignUp()">here</span></p>
+    </div>
+<form>

@@ -1,0 +1,31 @@
+<div class="active-container">
+    <div class="active-header">
+        <h1 class="active-heading">{{heading}}</h1>
+        <p class="current-date">{{currentDate | date : 'EEEE, dd MMMM yyyy'}}</p>
+    </div> 
+
+    <h1 class="tasks-unavailable" *ngIf="dataUnavialable">No Tasks Available</h1>
+    <div class="tasks">
+        <div *ngFor="let task of taskData; let i = index" class="task-desc-container" [ngClass]="{'task-background' : completed}">
+            <div  class="task" (click)="toogleDescription(i)">
+                <img [src]='checkBoxImage' alt="checkbox icon" class="checkbox-img">
+                <p class="task-font">{{task.title}}</p>
+            </div>
+            <div class="main-description-container" *ngIf="descriptions[i]">
+                <div class="description-container" [ngClass]="{'task-background':completed}">
+                    <h1 class="desc-heading">{{task.title}}</h1>
+                    <p class="desc-time" [ngClass]="{'completed-time-txt': completed}">Added {{task.createdOn | timeDiff}}</p>
+                    <h2 class="desc-text">Description</h2>
+                    <p class="desc-sub-text">{{task.description}}</p>
+                    <div class="icons-container">
+                        <img [src]="checkBoxImage" alt="checkbox-icon" class="desc-checkbox-img pointer" (click)="showConfirmPopup(task,i)">
+                        <div class="edit-bin-icons">
+                            <img src="assets/carbon_edit.png" alt="edit icon" class="edit-img pointer" (click)="editTask(task)" *ngIf="!completed">
+                            <img [src]="binImage" alt="bin icon" class="bin-img pointer" (click)="deleteTask(task.id,i)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

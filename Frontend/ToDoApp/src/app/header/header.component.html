@@ -1,0 +1,27 @@
+<div class="header">
+    <h1 class="active-nav-bar-heading">{{heading}}</h1>
+    <div class="sign-out-btn pointer">
+        <p class="sign-out-text" (click)="signOut()">Sign Out</p>
+        <img src="assets/mdi_logout.png" alt="logout icon" class="logout-icon">
+    </div>
+</div>
+<div class="mobile-header">
+    <h1 class="to-do-app-heading">ToDoApp</h1>
+    <div class="button-container">
+        <div class="add-task-btn pointer" (click)="showAddTask()"> 
+            <span class="add-task-text">Add Task</span>
+            <img src="assets/Add button.png" alt="plus icon" class="plus-icon">
+        </div>
+        <div class="sign-out-btn pointer">
+            <p class="sign-out-text" (click)="signOut()">Sign Out</p>
+            <img src="assets/mdi_logout.png" alt="logout icon" class="logout-icon">
+        </div>
+    </div>
+</div>
+<div class="nav-bar-dropdown pointer">
+    <select name="nav-bar" [(ngModel)]="heading" class="nav-bar" (change)="changeRoute($event)">
+        <option value="Dashboard" class="nav-bar-option" selected [hidden]="heading == 'Dashboard'">Dashboard</option>
+        <option value="Active" class="nav-bar-option" [hidden]="heading == 'Active'">Active</option>
+        <option value="Completed" class="nav-bar-option" [hidden]="heading == 'Completed'">Completed</option>
+    </select>
+</div>

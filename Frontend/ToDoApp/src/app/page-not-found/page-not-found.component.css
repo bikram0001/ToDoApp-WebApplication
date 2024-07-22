@@ -1,0 +1,8 @@
+.pageNotFound{
+     width: 100vw;
+    height: 100vh; 
+    background: url('../../assets/jisunpark_404-error.gif');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

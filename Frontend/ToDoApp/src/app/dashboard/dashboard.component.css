@@ -1,0 +1,317 @@
+.dashboard-container{
+    padding: 20px 60px 5px 60px;
+}
+.greet-user-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px;    
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.greet-icon-container{
+    position: relative;
+}
+.greet-msg{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    color: rgba(37, 24, 20, 1);
+}
+.greet-sub-msg{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+.greet-icon{
+    position: absolute;
+    width: 220px;
+    height: 190px;
+    right: 0px;
+    bottom: -86.5px;
+}
+.col-flex{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    border-radius: 10px;
+}
+.brown-background{
+    background: rgba(186, 81, 18, 1);
+}
+.ornage-background{
+    background: rgba(237, 176, 70, 1);
+}
+.completed-img,.watch-img{
+    width: 35px;
+}
+.percentage{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color : rgba(255, 255, 255, 1);
+}
+.complete-text,.active-text{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    color : rgba(255, 255, 255, 1);
+}
+.current-date,.delete-all{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.current-date{
+    color: rgba(37, 24, 20, 1);
+}
+.delete-all{
+    color: rgba(186, 81, 18, 1);
+}
+.task-heading{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    color: rgba(37, 24, 20, 1);
+}
+.task-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.progress-container{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 20px;
+}
+.tasks-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 1em;
+}
+.task-contents{
+    width: 80%;
+}
+.checkbox-img{
+    width: 0.9em;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.task{
+    word-break: break-all;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1);
+}
+.task-font{
+    word-wrap: break-word;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(37, 24, 20, 1);
+}
+.task-background{
+    background: rgba(237, 176, 70, 1);
+    border-radius: 5px;
+}
+.percentage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today-date{
+    display: none;
+}
+.tasks-unavailable{
+    padding-top: 5vh;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(164, 164, 164);
+}
+@media (max-width: 1000px){
+    .greet-msg{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 900px){
+    .tasks-unavailable{
+        font-size: 18px;
+    }
+    .task-heading{
+        font-size: 17px;
+    }
+    .col-flex{
+        flex-direction: row;
+        gap: 1em;
+        width: 100%;
+    }
+    .percentage-container{
+        align-items: first baseline;
+    }
+    .percentage{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .current-date{
+        display: none;
+    }
+    .tasks-container{
+        flex-direction: column-reverse;
+    }
+    .progress-container{
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 2em;
+    }
+    .task-contents{
+        width: 100%;
+    }
+    .del-date-container{
+        display: flex;
+        gap: 10px;
+    }
+    .today-date{
+        display: inline-block;
+        color: rgba(37, 24, 20, 1);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .greet-msg{
+        font-size: 20px;
+    }
+    .greet-sub-msg{
+        font-size: 14px;    
+    }
+}
+
+@media (max-width : 740px) {
+    .tasks-unavailable{
+        font-size: 14px;
+    }
+    .task-font{
+        font-size:11px;
+    }
+    .task-heading{
+        font-size: 15px;
+    }
+    .greet-icon{
+        width: 150px;
+        height: 140px;
+        bottom: -76.5px;
+        right: -40px;
+        z-index: 1;
+    }
+    .greet-msg{
+        z-index: 2;
+        font-size: 19px;
+    }
+    .greet-sub-msg{
+        font-size: 12px;    
+    }
+    .task{
+        padding: 0.5em;
+    }
+}
+@media (max-width : 540px) {
+    .greet-icon{
+        width: 140px;
+        height: 130px;
+        bottom: -70.5px;
+        right: -40px;
+        z-index: 1;
+    }
+    .greet-msg{
+        z-index: 2;
+        font-size: 13px;
+    }
+    .greet-sub-msg{
+        font-size: 10px;    
+    }
+}
+@media (max-width : 470px) {
+    .tasks-unavailable{
+        font-size: 10px;
+    }
+    .task-font{
+        font-size: 9px;
+    }
+    .greet-icon{
+        width: 90px;
+        height : 85px;
+        bottom: -38px;
+        right : 0px;
+        left: -70px;
+    }
+    .greet-user-container{
+        padding: 1.5em;
+    }
+    .completed-img,.watch-img{
+        width: 25px;
+        height: 25px;
+    }
+    .percentage{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .col-flex{
+        padding: 10px 0;
+        gap: 10px;
+    }
+    .complete-text,.active-text{
+        line-height: 8px;
+    }
+    .progress-container{
+        gap: 10px;
+        padding-top: 1em;
+    }
+    .task-heading{
+        font-size: 12px;
+    }
+    .delete-all,.today-date{
+        font-size: 7px;
+    }
+    .dashboard-container{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .task{
+        padding: 0.5em;
+    }
+    .greet-msg{
+        z-index: 2;
+        font-size: 12px;
+    }
+    .greet-sub-msg{
+        font-size: 8px;    
+    }
+}
+@media (max-width : 330px) {
+    .greet-msg{
+        z-index: 2;
+        font-size: 11px;
+    }
+    .greet-sub-msg{
+        font-size: 8px;    
+    }
+}

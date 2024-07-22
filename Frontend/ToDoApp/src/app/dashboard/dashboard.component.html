@@ -1,0 +1,46 @@
+<div class="dashboard-container">
+    <div class="greet-user-container">
+        <div>
+            <h1 class="greet-msg">Hello, Beautiful Human!</h1>
+            <p class="greet-sub-msg">What do you want to do today?</p>
+        </div>
+        <div class="greet-icon-container">
+            <img src="assets/young smiling woman working at laptop.png" alt="greet-icon" class="greet-icon"> 
+        </div>
+    </div>
+    <div class="tasks-container">
+        <div class="task-contents">
+            <div class="task-header">
+                <h1 class="task-heading">Today's Tasks</h1>
+                <div class="del-date-container">
+                    <p class="delete-all pointer" (click)="deleteTasks()">Delete All</p>
+                    <p class="today-date">{{currentDate | date : 'EEEE, dd MMMM yyyy'}}</p>
+                </div>
+            </div>
+            <h1 class="tasks-unavailable" *ngIf="dataUnavialable">No Tasks Available</h1>
+            <div class="tasks">
+                <div *ngFor="let task of tasks" class="task" [ngClass]="{'task-background' : task.status=='completed'}">
+                    <img [src]="task.status == 'active' ? 'assets/Vector.png' : 'assets/Vector1.png'" alt="checkbox icon" class="checkbox-img">
+                    <p class="task-font">{{task.title}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="progress-container">
+            <p class="current-date">{{currentDate | date : 'EEEE, dd MMMM yyyy'}}</p>
+            <div class="col-flex brown-background">
+                <img src="assets/Mask group.png" alt="done icon" class="completed-img">
+                <div class="percentage-container">
+                    <h1 class="percentage">{{tasksPercentage.completedTasks}}%</h1>
+                    <p class="complete-text">Completed tasks</p>
+                </div>
+            </div>
+            <div class="col-flex ornage-background">
+                <img src="assets/time icon.png" alt="watch icon" class="watch-img">
+                <div class="percentage-container">
+                    <h1 class="percentage">{{tasksPercentage.activeTasks}}%</h1>
+                    <p class="active-text">Active tasks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
